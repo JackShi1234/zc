@@ -16,22 +16,13 @@
 		1827067D2175946F00706500 /* zhuanshiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827067C2175946F00706500 /* zhuanshiTests.m */; };
 		182706882175946F00706500 /* zhuanshiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182706872175946F00706500 /* zhuanshiUITests.m */; };
 		182706AF2175972A00706500 /* ViewControlerLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1827069C2175972900706500 /* ViewControlerLogin.xib */; };
-		182706B02175972A00706500 /* ViewControllerRegist3.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827069E2175972900706500 /* ViewControllerRegist3.m */; };
-		182706B12175972A00706500 /* ViewControllerRegist4.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827069F2175972900706500 /* ViewControllerRegist4.m */; };
-		182706B22175972A00706500 /* ViewControllerRegist3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182706A12175972900706500 /* ViewControllerRegist3.xib */; };
-		182706B32175972A00706500 /* ViewControllerRegist2.m in Sources */ = {isa = PBXBuildFile; fileRef = 182706A22175972900706500 /* ViewControllerRegist2.m */; };
 		182706B42175972A00706500 /* ModifyTelephoneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182706A42175972900706500 /* ModifyTelephoneController.m */; };
-		182706B52175972A00706500 /* ViewControllerRegist1.m in Sources */ = {isa = PBXBuildFile; fileRef = 182706A52175972900706500 /* ViewControllerRegist1.m */; };
-		182706B62175972A00706500 /* ViewControllerRegist2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182706A62175972900706500 /* ViewControllerRegist2.xib */; };
-		182706B72175972A00706500 /* ViewControllerRegist4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182706A72175972900706500 /* ViewControllerRegist4.xib */; };
 		182706B82175972A00706500 /* ForgetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182706A82175972900706500 /* ForgetController.m */; };
 		182706B92175972A00706500 /* ForgetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182706A92175972A00706500 /* ForgetController.xib */; };
 		182706BA2175972A00706500 /* ModifyTelephoneController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182706AA2175972A00706500 /* ModifyTelephoneController.xib */; };
 		182706BB2175972A00706500 /* ViewControlerLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 182706AD2175972A00706500 /* ViewControlerLogin.m */; };
-		182706BC2175972A00706500 /* ViewControllerRegist1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182706AE2175972A00706500 /* ViewControllerRegist1.xib */; };
 		182706C5217597F500706500 /* ViewControllerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 182706BF217597F500706500 /* ViewControllerBase.m */; };
 		182706C6217597F500706500 /* ZLNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182706C2217597F500706500 /* ZLNavgationController.m */; };
-		182706C7217597F500706500 /* ViewControllerElse.m in Sources */ = {isa = PBXBuildFile; fileRef = 182706C3217597F500706500 /* ViewControllerElse.m */; };
 		182706E72175B61E00706500 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182706CF2175B61C00706500 /* UIView+ViewController.m */; };
 		182706E82175B61E00706500 /* MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 182706D02175B61C00706500 /* MyTextField.m */; };
 		182706E92175B61E00706500 /* UIStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182706D12175B61C00706500 /* UIStatusView.m */; };
@@ -44,8 +35,13 @@
 		182706F02175B61E00706500 /* UIView+WLFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 182706DE2175B61D00706500 /* UIView+WLFrame.m */; };
 		182706F12175B61E00706500 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182706DF2175B61D00706500 /* UIPlaceHolderTextView.m */; };
 		182706F22175B61E00706500 /* UIChooseStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182706E02175B61D00706500 /* UIChooseStatusView.m */; };
-		182706F42175BC1500706500 /* ViewControllerElse.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182706F32175BC1400706500 /* ViewControllerElse.xib */; };
 		57D32BDEF8604E97DAB58A4D /* libPods-zhuanshiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B26A5047B2547B0119A4EB0 /* libPods-zhuanshiTests.a */; };
+		9118580C2189DA64000AEF1B /* ViewControllerRegist.m in Sources */ = {isa = PBXBuildFile; fileRef = 9118580A2189DA64000AEF1B /* ViewControllerRegist.m */; };
+		9118580D2189DA64000AEF1B /* ViewControllerRegist.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9118580B2189DA64000AEF1B /* ViewControllerRegist.xib */; };
+		911858102189E359000AEF1B /* ViewControllerHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 9118580F2189E359000AEF1B /* ViewControllerHome.m */; };
+		911858162189E3BC000AEF1B /* ViewControllerShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 911858152189E3BC000AEF1B /* ViewControllerShop.m */; };
+		911858192189E3DD000AEF1B /* ViewControllerEntertainment.m in Sources */ = {isa = PBXBuildFile; fileRef = 911858182189E3DD000AEF1B /* ViewControllerEntertainment.m */; };
+		9118581C2189E3F0000AEF1B /* ViewControllerMine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9118581B2189E3F0000AEF1B /* ViewControllerMine.m */; };
 		9119415C21777226008F3FC6 /* ViewControllerMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9119415B21777226008F3FC6 /* ViewControllerMain.m */; };
 		C2888FC49751F3084F04BB91 /* libPods-zhuanshiUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B2EAD972FA8E11EC8C45C6 /* libPods-zhuanshiUITests.a */; };
 		F8817E53364528D4D7090B79 /* libPods-zhuanshi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC37FE1D302F49D928EDE5B /* libPods-zhuanshi.a */; };
@@ -85,33 +81,19 @@
 		182706832175946F00706500 /* zhuanshiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zhuanshiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		182706872175946F00706500 /* zhuanshiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zhuanshiUITests.m; sourceTree = "<group>"; };
 		182706892175946F00706500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1827069A2175972900706500 /* ViewControllerRegist2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRegist2.h; sourceTree = "<group>"; };
-		1827069B2175972900706500 /* ViewControllerRegist3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRegist3.h; sourceTree = "<group>"; };
 		1827069C2175972900706500 /* ViewControlerLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControlerLogin.xib; sourceTree = "<group>"; };
 		1827069D2175972900706500 /* ModifyTelephoneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyTelephoneController.h; sourceTree = "<group>"; };
-		1827069E2175972900706500 /* ViewControllerRegist3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRegist3.m; sourceTree = "<group>"; };
-		1827069F2175972900706500 /* ViewControllerRegist4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRegist4.m; sourceTree = "<group>"; };
-		182706A02175972900706500 /* ViewControllerRegist1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRegist1.h; sourceTree = "<group>"; };
-		182706A12175972900706500 /* ViewControllerRegist3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerRegist3.xib; sourceTree = "<group>"; };
-		182706A22175972900706500 /* ViewControllerRegist2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRegist2.m; sourceTree = "<group>"; };
-		182706A32175972900706500 /* ViewControllerRegist4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRegist4.h; sourceTree = "<group>"; };
 		182706A42175972900706500 /* ModifyTelephoneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyTelephoneController.m; sourceTree = "<group>"; };
-		182706A52175972900706500 /* ViewControllerRegist1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRegist1.m; sourceTree = "<group>"; };
-		182706A62175972900706500 /* ViewControllerRegist2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerRegist2.xib; sourceTree = "<group>"; };
-		182706A72175972900706500 /* ViewControllerRegist4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerRegist4.xib; sourceTree = "<group>"; };
 		182706A82175972900706500 /* ForgetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetController.m; sourceTree = "<group>"; };
 		182706A92175972A00706500 /* ForgetController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetController.xib; sourceTree = "<group>"; };
 		182706AA2175972A00706500 /* ModifyTelephoneController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModifyTelephoneController.xib; sourceTree = "<group>"; };
 		182706AB2175972A00706500 /* ViewControlerLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControlerLogin.h; sourceTree = "<group>"; };
 		182706AC2175972A00706500 /* ForgetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetController.h; sourceTree = "<group>"; };
 		182706AD2175972A00706500 /* ViewControlerLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControlerLogin.m; sourceTree = "<group>"; };
-		182706AE2175972A00706500 /* ViewControllerRegist1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerRegist1.xib; sourceTree = "<group>"; };
 		182706BE217597F500706500 /* ZLNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLNavgationController.h; sourceTree = "<group>"; };
 		182706BF217597F500706500 /* ViewControllerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerBase.m; sourceTree = "<group>"; };
-		182706C0217597F500706500 /* ViewControllerElse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerElse.h; sourceTree = "<group>"; };
 		182706C1217597F500706500 /* ViewControllerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerBase.h; sourceTree = "<group>"; };
 		182706C2217597F500706500 /* ZLNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLNavgationController.m; sourceTree = "<group>"; };
-		182706C3217597F500706500 /* ViewControllerElse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerElse.m; sourceTree = "<group>"; };
 		182706C92175A95F00706500 /* ImportHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImportHeader.pch; sourceTree = "<group>"; };
 		182706CA2175B42700706500 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		182706CF2175B61C00706500 /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
@@ -138,11 +120,21 @@
 		182706E42175B61D00706500 /* CALayer+BordColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+BordColor.h"; sourceTree = "<group>"; };
 		182706E52175B61E00706500 /* CBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBModel.h; sourceTree = "<group>"; };
 		182706E62175B61E00706500 /* LXNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworking.h; sourceTree = "<group>"; };
-		182706F32175BC1400706500 /* ViewControllerElse.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerElse.xib; sourceTree = "<group>"; };
 		24DAC8B3534D8CBFB7DF8D28 /* Pods-zhuanshi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhuanshi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zhuanshi/Pods-zhuanshi.debug.xcconfig"; sourceTree = "<group>"; };
 		3BC37FE1D302F49D928EDE5B /* libPods-zhuanshi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-zhuanshi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B26A5047B2547B0119A4EB0 /* libPods-zhuanshiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-zhuanshiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3AA18310E896D89A25CF69 /* Pods-zhuanshiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhuanshiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zhuanshiUITests/Pods-zhuanshiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		911858092189DA64000AEF1B /* ViewControllerRegist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerRegist.h; sourceTree = "<group>"; };
+		9118580A2189DA64000AEF1B /* ViewControllerRegist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRegist.m; sourceTree = "<group>"; };
+		9118580B2189DA64000AEF1B /* ViewControllerRegist.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerRegist.xib; sourceTree = "<group>"; };
+		9118580E2189E359000AEF1B /* ViewControllerHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerHome.h; sourceTree = "<group>"; };
+		9118580F2189E359000AEF1B /* ViewControllerHome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerHome.m; sourceTree = "<group>"; };
+		911858142189E3BC000AEF1B /* ViewControllerShop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerShop.h; sourceTree = "<group>"; };
+		911858152189E3BC000AEF1B /* ViewControllerShop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerShop.m; sourceTree = "<group>"; };
+		911858172189E3DD000AEF1B /* ViewControllerEntertainment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerEntertainment.h; sourceTree = "<group>"; };
+		911858182189E3DD000AEF1B /* ViewControllerEntertainment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerEntertainment.m; sourceTree = "<group>"; };
+		9118581A2189E3F0000AEF1B /* ViewControllerMine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerMine.h; sourceTree = "<group>"; };
+		9118581B2189E3F0000AEF1B /* ViewControllerMine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMine.m; sourceTree = "<group>"; };
 		9119415A21777226008F3FC6 /* ViewControllerMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerMain.h; sourceTree = "<group>"; };
 		9119415B21777226008F3FC6 /* ViewControllerMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMain.m; sourceTree = "<group>"; };
 		AFC0601682AFB1B60847C910 /* Pods-zhuanshiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhuanshiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-zhuanshiTests/Pods-zhuanshiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -261,6 +253,9 @@
 		18270697217596A400706500 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				911858132189E3A0000AEF1B /* Mine */,
+				911858122189E37E000AEF1B /* Yule */,
+				911858112189E363000AEF1B /* Shop */,
 				91194159217771ED008F3FC6 /* Home */,
 				182706BD217597C000706500 /* BaseController */,
 				18270699217596D200706500 /* Login */,
@@ -288,18 +283,9 @@
 				182706AB2175972A00706500 /* ViewControlerLogin.h */,
 				182706AD2175972A00706500 /* ViewControlerLogin.m */,
 				1827069C2175972900706500 /* ViewControlerLogin.xib */,
-				182706A02175972900706500 /* ViewControllerRegist1.h */,
-				182706A52175972900706500 /* ViewControllerRegist1.m */,
-				182706AE2175972A00706500 /* ViewControllerRegist1.xib */,
-				1827069A2175972900706500 /* ViewControllerRegist2.h */,
-				182706A22175972900706500 /* ViewControllerRegist2.m */,
-				182706A62175972900706500 /* ViewControllerRegist2.xib */,
-				1827069B2175972900706500 /* ViewControllerRegist3.h */,
-				1827069E2175972900706500 /* ViewControllerRegist3.m */,
-				182706A12175972900706500 /* ViewControllerRegist3.xib */,
-				182706A32175972900706500 /* ViewControllerRegist4.h */,
-				1827069F2175972900706500 /* ViewControllerRegist4.m */,
-				182706A72175972900706500 /* ViewControllerRegist4.xib */,
+				911858092189DA64000AEF1B /* ViewControllerRegist.h */,
+				9118580A2189DA64000AEF1B /* ViewControllerRegist.m */,
+				9118580B2189DA64000AEF1B /* ViewControllerRegist.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -307,11 +293,8 @@
 		182706BD217597C000706500 /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
-				182706F32175BC1400706500 /* ViewControllerElse.xib */,
 				182706C1217597F500706500 /* ViewControllerBase.h */,
 				182706BF217597F500706500 /* ViewControllerBase.m */,
-				182706C0217597F500706500 /* ViewControllerElse.h */,
-				182706C3217597F500706500 /* ViewControllerElse.m */,
 				182706BE217597F500706500 /* ZLNavgationController.h */,
 				182706C2217597F500706500 /* ZLNavgationController.m */,
 			);
@@ -372,9 +355,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		911858112189E363000AEF1B /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				911858142189E3BC000AEF1B /* ViewControllerShop.h */,
+				911858152189E3BC000AEF1B /* ViewControllerShop.m */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		911858122189E37E000AEF1B /* Yule */ = {
+			isa = PBXGroup;
+			children = (
+				911858172189E3DD000AEF1B /* ViewControllerEntertainment.h */,
+				911858182189E3DD000AEF1B /* ViewControllerEntertainment.m */,
+			);
+			path = Yule;
+			sourceTree = "<group>";
+		};
+		911858132189E3A0000AEF1B /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				9118581A2189E3F0000AEF1B /* ViewControllerMine.h */,
+				9118581B2189E3F0000AEF1B /* ViewControllerMine.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
 		91194159217771ED008F3FC6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				9118580E2189E359000AEF1B /* ViewControllerHome.h */,
+				9118580F2189E359000AEF1B /* ViewControllerHome.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -496,15 +508,11 @@
 			files = (
 				182706B92175972A00706500 /* ForgetController.xib in Resources */,
 				182706702175946E00706500 /* LaunchScreen.storyboard in Resources */,
-				182706BC2175972A00706500 /* ViewControllerRegist1.xib in Resources */,
-				182706F42175BC1500706500 /* ViewControllerElse.xib in Resources */,
-				182706B72175972A00706500 /* ViewControllerRegist4.xib in Resources */,
 				1827066D2175946E00706500 /* Assets.xcassets in Resources */,
 				1827066B2175946E00706500 /* Main.storyboard in Resources */,
-				182706B22175972A00706500 /* ViewControllerRegist3.xib in Resources */,
+				9118580D2189DA64000AEF1B /* ViewControllerRegist.xib in Resources */,
 				182706AF2175972A00706500 /* ViewControlerLogin.xib in Resources */,
 				182706BA2175972A00706500 /* ModifyTelephoneController.xib in Resources */,
-				182706B62175972A00706500 /* ViewControllerRegist2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,29 +675,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				182706B52175972A00706500 /* ViewControllerRegist1.m in Sources */,
+				911858192189E3DD000AEF1B /* ViewControllerEntertainment.m in Sources */,
+				9118581C2189E3F0000AEF1B /* ViewControllerMine.m in Sources */,
 				182706EF2175B61E00706500 /* Utils.m in Sources */,
 				182706E72175B61E00706500 /* UIView+ViewController.m in Sources */,
 				182706B82175972A00706500 /* ForgetController.m in Sources */,
 				182706F02175B61E00706500 /* UIView+WLFrame.m in Sources */,
-				182706B12175972A00706500 /* ViewControllerRegist4.m in Sources */,
 				182706682175946E00706500 /* ViewController.m in Sources */,
 				182706EC2175B61E00706500 /* LXNetworking.m in Sources */,
 				182706E82175B61E00706500 /* MyTextField.m in Sources */,
 				182706E92175B61E00706500 /* UIStatusView.m in Sources */,
+				911858162189E3BC000AEF1B /* ViewControllerShop.m in Sources */,
 				182706732175946E00706500 /* main.m in Sources */,
-				182706B02175972A00706500 /* ViewControllerRegist3.m in Sources */,
 				182706ED2175B61E00706500 /* CBModel.m in Sources */,
 				182706652175946E00706500 /* AppDelegate.m in Sources */,
 				182706EB2175B61E00706500 /* CALayer+BordColor.m in Sources */,
 				9119415C21777226008F3FC6 /* ViewControllerMain.m in Sources */,
+				9118580C2189DA64000AEF1B /* ViewControllerRegist.m in Sources */,
 				182706C6217597F500706500 /* ZLNavgationController.m in Sources */,
 				182706EE2175B61E00706500 /* CBUtil.m in Sources */,
-				182706C7217597F500706500 /* ViewControllerElse.m in Sources */,
 				182706B42175972A00706500 /* ModifyTelephoneController.m in Sources */,
 				182706F12175B61E00706500 /* UIPlaceHolderTextView.m in Sources */,
 				182706F22175B61E00706500 /* UIChooseStatusView.m in Sources */,
-				182706B32175972A00706500 /* ViewControllerRegist2.m in Sources */,
+				911858102189E359000AEF1B /* ViewControllerHome.m in Sources */,
 				182706BB2175972A00706500 /* ViewControlerLogin.m in Sources */,
 				182706EA2175B61E00706500 /* ChineseToPinyin.m in Sources */,
 				182706C5217597F500706500 /* ViewControllerBase.m in Sources */,

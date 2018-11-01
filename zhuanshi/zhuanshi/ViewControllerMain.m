@@ -8,6 +8,9 @@
 
 #import "ViewControllerMain.h"
 #import "ZLNavgationController.h"
+#import "ViewControllerMain.h"
+#import "ViewControllerShop.h"
+
 
 @interface ViewControllerMain ()
 
@@ -24,10 +27,10 @@
 -(void)createTabbar
 {
     [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
-    NSArray *controller = @[@"ViewControllerHome",@"ViewControllerFind",@"ViewControllerNotice",@"ViewControllerMine"];
+    NSArray *controller = @[@"ViewControllerHome",@"ViewControllerShop",@"ViewControllerEntertainment",@"ViewControllerMine"];
     NSArray *imageNormal = @[@"sy-hh",@"fx-hh",@"xx-hh",@"grzx-hh"];
     NSArray *imageSelect = @[@"sy-h",@"fx-h",@"xx-h",@"gezx-h"];
-    NSArray *title = @[@"首页",@"发现",@"消息",@"我的"];
+    NSArray *title = @[@"首页",@"购物",@"娱乐",@"我的"];
     NSMutableArray *arrayContrllers = [NSMutableArray array];
     for(int i=0;i<controller.count;i++)
     {

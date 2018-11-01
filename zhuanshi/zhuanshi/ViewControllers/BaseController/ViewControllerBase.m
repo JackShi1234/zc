@@ -25,36 +25,37 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     [self.navigationController.navigationBar setBarTintColor:color];
 
-    self.navigationController.navigationBar.hidden = NO;
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 25, 25)];
+    [button setImage:[UIImage imageNamed:@"fh"] forState:UIControlStateNormal];
+    button.imageEdgeInsets = UIEdgeInsetsMake(0, -4, 0, 4);
+    [button addTarget:self action:@selector(goToBack) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithCustomView:button];
+    
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-//    if (self.navigationController.viewControllers.count > 1) {
+    if (self.navigationController.viewControllers.count > 1) {
 //        UIBarButtonItem * leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back"] style:UIBarButtonItemStylePlain target:self action:@selector(goToBack)];
 //        [leftItem setTintColor:[UIColor whiteColor]];
-//        self.navigationItem.leftBarButtonItem = leftItem;
-//    }
-//
-//    
-//    [self.navigationController.navigationBar setTitleTextAttributes:
-//     @{NSFontAttributeName:[UIFont boldSystemFontOfSize:17],
-//       NSForegroundColorAttributeName:[UIColor whiteColor]}];
+        self.navigationItem.leftBarButtonItem = leftItem;
+    }
+
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSFontAttributeName:[UIFont boldSystemFontOfSize:17],
+       NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    [self.navigationController.navigationBar setBarTintColor:color];
+    
+    self.navigationController.navigationBar.hidden = NO;
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
 }
 - (void)goToBack
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

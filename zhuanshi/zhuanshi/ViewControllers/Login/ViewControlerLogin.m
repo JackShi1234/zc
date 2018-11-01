@@ -8,11 +8,9 @@
 
 #import "ViewControlerLogin.h"
 #import "MyTextField.h"
-#import "ViewControllerRegist1.h"
+#import "ViewControllerRegist.h"
 //#import "GSKeyChainDataManager.h"
 #import "ViewControllerMain.h"
-#import "ViewControllerRegist4.h"
-#import "ViewControllerRegist2.h"
 //#import "UserModel.h"
 #import "ForgetController.h"
 @interface ViewControlerLogin ()
@@ -56,7 +54,7 @@
 - (IBAction)regist:(UIButton *)sender
 {
    // ViewControllerRegist1 *regist1 = [[ViewControllerRegist1 alloc]initWithNibName:@"ViewControllerRegist1" bundle:nil];
-    ViewControllerRegist1 *regist1 = [[ViewControllerRegist1 alloc] init];
+    ViewControllerRegist *regist1 = [[ViewControllerRegist alloc] init];
     [self.navigationController pushViewController:regist1 animated:YES];
 }
 

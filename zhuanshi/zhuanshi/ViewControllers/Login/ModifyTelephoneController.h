@@ -6,9 +6,9 @@
 //  Copyright © 2018年 呵呵. All rights reserved.
 //
 
-#import "ViewControllerElse.h"
+#import "ViewControllerBase.h"
 
-@interface ModifyTelephoneController : ViewControllerElse
+@interface ModifyTelephoneController : ViewControllerBase
 
 @property (weak, nonatomic) IBOutlet UITextField *phoneTF;
 @property (weak, nonatomic) IBOutlet UITextField *codeTF;

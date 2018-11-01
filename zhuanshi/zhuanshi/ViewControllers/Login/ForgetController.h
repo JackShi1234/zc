@@ -6,9 +6,9 @@
 //  Copyright © 2018年 呵呵. All rights reserved.
 //
 
-#import "ViewControllerElse.h"
+#import "ViewControllerBase.h"
 
-@interface ForgetController : ViewControllerElse
+@interface ForgetController : ViewControllerBase
 @property (weak, nonatomic) IBOutlet UITextField *phoneTF;
 @property (weak, nonatomic) IBOutlet UITextField *codeTF;
 @property (weak, nonatomic) IBOutlet UIButton *codeBtn;
