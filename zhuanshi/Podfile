@@ -7,6 +7,12 @@ target 'zhuanshi' do
 
   pod 'AFNetworking'
   pod 'MBProgressHUD'
+  pod 'IQKeyboardManager'
+  pod 'Masonry'
+  pod 'MJRefresh'
+  pod 'SDWebImage'
+  pod 'YYKit'
+  pod 'SDCycleScrollView'
 
   target 'zhuanshiTests' do
     inherit! :search_paths
