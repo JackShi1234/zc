@@ -21,11 +21,21 @@
 //获取验证码方法
 - (IBAction)clickGetCode:(id)sender {
     
+//    NSDictionary * parame = @{
+//                              @"phonenumber":dictionary[@"userID"]
+//
+//                              };
 }
 
 //注册方法
 - (IBAction)clickResign:(id)sender {
     
+//    NSDictionary * parame = @{
+//                              @"phonenumber":dictionary[@"userID"],
+//                              @"password":[USER_DEFAULTS objectForKey:@"ukey"],
+//                              @"code":dictionary[@"userID"],
+//                              @"tgname":[USER_DEFAULTS objectForKey:@"ukey"],
+//                              };
 }
 
 /*

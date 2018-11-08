@@ -77,6 +77,10 @@
     // Dispose of any resources that can be recreated.
 }
 //- (void)loginTheUser{
+//NSDictionary * parame = @{
+//                          @"phonenumber":dictionary[@"userID"],
+//                          @"password":[USER_DEFAULTS objectForKey:@"ukey"]
+//                          };
 //    NSString *phoneid = [GSKeyChainDataManager readUUID].length>0?[GSKeyChainDataManager readUUID]:@"123";
 //    [LXNetworking postWithUrl:[NSString stringWithFormat:@"%@login/login",SERVER_IP] params:@{@"mobile":_phoneNumber.text,@"password":[Utils md5:[Utils md5:_passWord.text]],@"phoneid":phoneid} success:^(id response) {
 //        NSDictionary *dic = (NSDictionary *)response;

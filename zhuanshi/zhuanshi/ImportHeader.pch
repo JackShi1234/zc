@@ -9,6 +9,7 @@
 #ifndef ImportHeader_pch
 #define ImportHeader_pch
 #import "Header.h"
+#import "NetworkConfig.h"
 
 //是否是iOS11系统
 #define iOS11 @available(iOS 11.0, *)?YES:NO
@@ -39,12 +40,7 @@
 #define kTopHeight (kStatusBarHeight + kNavBarHeight)
 
 //测试服务器
-#define SERVER_IP @"http://car.hbytapp.com/index.php/home/"
-//朱工服务器
-//#define SERVER_IP @"http://192.168.0.112/index.php/home/"
-
-//#define WXID @"12312312312"
-#define WXID @"wx7143b598761712cc"
+#define SERVER_IP @"http://"
 
 #define HUD(string) MBProgressHUD *hud=[MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];\
 hud.mode=MBProgressHUDModeText;\

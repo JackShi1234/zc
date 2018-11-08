@@ -7,8 +7,11 @@
 //
 
 #import "ViewControllerShop.h"
+#import "myLabel.h"
 
-@interface ViewControllerShop ()<SDCycleScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UITextFieldDelegate>
+#define sFirstTop 
+
+@interface ViewControllerShop ()<SDCycleScrollViewDelegate,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
 {
     SDCycleScrollView *cycleScrollView;
     UITapGestureRecognizer *tap;
@@ -21,6 +24,7 @@
 @property (nonatomic , strong)NSMutableArray *scrollerViewArr;
 @property (nonatomic,strong)NSMutableArray *UrlArr;
 @property (nonatomic ,strong)UIView *scrollerView;
+@property (nonatomic ,strong) UITableView * tableView;
 
 @end
 
@@ -66,11 +70,8 @@
 
 - (void)createView {
     
-    UILabel * labelTitle = [[UILabel alloc]initWithFrame:CGRectMake(16, kWidth/1.8 + 20, kWidth-32, 60)];
-    labelTitle.text = @"XXX猜中iPhone XS Max 一台";
-    labelTitle.font = [UIFont systemFontOfSize:30];
-    labelTitle.textColor = [UIColor redColor];
-    labelTitle.textAlignment = NSTextAlignmentCenter;
+    myLabel * labelTitle = [[myLabel alloc]initWithFrame:CGRectMake(16, kWidth/1.8 + 20, kWidth-32, 60) text:@"XXX猜中iPhone XS Max 一台" textColor:[UIColor redColor] font:[UIFont systemFontOfSize:30] backgroundColor:[UIColor whiteColor]];
+    
     [self.view addSubview:labelTitle];
     //    [labelTitle mas_makeConstraints:^(MASConstraintMaker *make) {
     //        make.leading.mas_equalTo(self.view.mas_leading).offset(16);
@@ -79,25 +80,29 @@
     //        make.top.mas_equalTo(self.scrollerView.mas_bottom).offset(20);
     //    }];
     
-    UIImageView * imageLeft = [[UIImageView alloc]init];
-    imageLeft.backgroundColor = [UIColor greenColor];
-    [self.view addSubview:imageLeft];
-    [imageLeft mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.view.mas_left).offset(16);
-        make.width.mas_equalTo(self.view.width/2 - 24);
-        make.height.mas_equalTo(self.view.width/2 - 24);
-        make.top.mas_equalTo(labelTitle.mas_bottom).offset(20);
+    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kTopHeight+50, kWidth, kHeigth-kTopHeight-50) style:UITableViewStyleGrouped];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+//    [tableView registerClass:[ZCell1 class] forCellReuseIdentifier:@"cell"];
+    MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        //        _page = 1;
+        //        [self.bigDataArr removeAllObjects];
+        //添加多次刷新，崩溃修复
+        [tableView reloadData];
+        //        [self getCarList];
     }];
+    tableView.mj_header = header;
+    MJRefreshBackFooter *footer = [MJRefreshBackFooter footerWithRefreshingBlock:^{
+        //        if (self.bigDataArr.count > 0 ) {
+        //            _page++;
+        //            [self getCarList];
+        //        }
+    }];
+    tableView.mj_footer = footer;
+    self.tableView = tableView;
+    [self.view addSubview:tableView];
     
-    UIImageView * imageRight = [[UIImageView alloc]init];
-    imageRight.backgroundColor = [UIColor yellowColor];
-    [self.view addSubview:imageRight];
-    [imageRight mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(imageLeft.mas_right).offset(16);
-        make.width.mas_equalTo(self.view.width/2 - 24);
-        make.height.mas_equalTo(self.view.width/2 - 24);
-        make.top.mas_equalTo(labelTitle.mas_bottom).offset(20);
-    }];
+    
     
 }
 

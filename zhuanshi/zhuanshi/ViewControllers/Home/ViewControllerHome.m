@@ -15,7 +15,7 @@
     NSString *longStr;
     NSString *url;
     NSMutableArray *bannerStrArr;
-    NSNumber *longNumber ;
+    NSNumber *longNumber;
 }
 
 @property (nonatomic , strong)NSMutableArray *scrollerViewArr;
@@ -75,7 +75,8 @@
 - (void)createView {
     
     UILabel * labelTitle = [[UILabel alloc]initWithFrame:CGRectMake(16, kWidth/1.8 + 20, kWidth-32, 60)];
-    labelTitle.text = @"XXX喜中iPhone XS Max 一台";
+//    labelTitle.text = @"XXX喜中iPhone XS Max 一台";
+    labelTitle.text = register;
     labelTitle.font = [UIFont systemFontOfSize:30];
     labelTitle.textColor = [UIColor redColor];
     labelTitle.textAlignment = NSTextAlignmentCenter;
