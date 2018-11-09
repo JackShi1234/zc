@@ -76,67 +76,27 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-//- (void)loginTheUser{
-//NSDictionary * parame = @{
-//                          @"phonenumber":dictionary[@"userID"],
-//                          @"password":[USER_DEFAULTS objectForKey:@"ukey"]
-//                          };
-//    NSString *phoneid = [GSKeyChainDataManager readUUID].length>0?[GSKeyChainDataManager readUUID]:@"123";
-//    [LXNetworking postWithUrl:[NSString stringWithFormat:@"%@login/login",SERVER_IP] params:@{@"mobile":_phoneNumber.text,@"password":[Utils md5:[Utils md5:_passWord.text]],@"phoneid":phoneid} success:^(id response) {
-//        NSDictionary *dic = (NSDictionary *)response;
-//        UserModel *model = [UserModel modelWithJSON:dic[@"data"]];
-//        if ([dic[@"status"] intValue] == 1) {
-//            [[NSUserDefaults standardUserDefaults] setObject:model.userid forKey:@"userid"];
-//            [[NSUserDefaults standardUserDefaults] setObject:model.token forKey:@"token"];[[NSUserDefaults standardUserDefaults] setObject:_phoneNumber.text forKey:@"phone"];
-//            ViewControllerMain *vc = [[ViewControllerMain alloc]init];
-//            UINavigationController * navigationCenter = [[UINavigationController alloc] initWithRootViewController:vc];
-//            navigationCenter.navigationBar.hidden = YES;
-//            UIWindow * window = [UIApplication sharedApplication].delegate.window;
-//            window.rootViewController = navigationCenter;
-//        }
-//        //未缴纳费用
-//        else if ([dic[@"status"] intValue] == 7)
-//        {
-//            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"温馨提示" message:dic[@"msg"]    preferredStyle: UIAlertControllerStyleAlert];
-//            [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//                ViewControllerRegist4 *regist4 = regist4 = [[ViewControllerRegist4 alloc]initWithNibName:@"ViewControllerRegist4" bundle:nil];
-//                regist4.jumpType = 1;
-//                regist4.userID = model.userid;
-//                regist4.token = model.token;
-//                regist4.price = -999;
-//                [self.navigationController pushViewController:regist4 animated:YES];
-//            }]];
-//            [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-//
-//            }]];
-//            //弹出提示框；
-//            [self presentViewController:alert animated:true completion:nil];
-//
-//
-//
-//        //审核被驳回
-//        }else if ([dic[@"status"] intValue] == 8)
-//        {
-//            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"温馨提示" message:dic[@"msg"]    preferredStyle: UIAlertControllerStyleAlert];
-//            [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//                ViewControllerRegist2 *regist2 = regist2 = [[ViewControllerRegist2 alloc]initWithNibName:@"ViewControllerRegist2" bundle:nil];
-//                regist2.jumpType = 1;
-//                regist2.userID = model.userid;
-//                [self.navigationController pushViewController:regist2 animated:YES];
-//            }]];
-//            [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-//
-//            }]];
-//            //弹出提示框；
-//            [self presentViewController:alert animated:true completion:nil];
-//        }
-//        else{
-//            HUD(dic[@"msg"]);
-//        }
-//    } fail:^(NSError *error) {
-//        ShowError
-//    }];
-//}
+
+- (void)loginTheUser{
+    NSDictionary * dic = @{@"phonenumber":_phoneNumber.text,@"password":_passWord.text};
+    [LXNetworking postWithUrl:[NSString stringWithFormat:@"%@%@",SERVER_IP,LOGININ] params:dic success:^(id response) {
+        NSDictionary *dic = (NSDictionary *)response;
+        if ([dic[@"code"] intValue] == 1) {
+    //        [userdefault setObject:dic[@"data"][@"uid"] forKey:@"userid"];
+    //        [userdefault setObject:dic[@"data"][@"token"] forKey:@"token"];
+            ViewControllerMain *vc = [[ViewControllerMain alloc]init];
+            UINavigationController * navigationCenter = [[UINavigationController alloc] initWithRootViewController:vc];
+            navigationCenter.navigationBar.hidden = YES;
+            UIWindow * window = [UIApplication sharedApplication].delegate.window;
+            window.rootViewController = navigationCenter;
+        }
+        else{
+            HUD(dic[@"msg"]);
+        }
+    } fail:^(NSError *error) {
+        ShowError
+    }];
+}
 /*
 #pragma mark - Navigation
 

@@ -80,10 +80,10 @@
     //        make.top.mas_equalTo(self.scrollerView.mas_bottom).offset(20);
     //    }];
     
-    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kTopHeight+50, kWidth, kHeigth-kTopHeight-50) style:UITableViewStyleGrouped];
+    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kWidth/1.8 + 20 + 60, kWidth, kHeigth-kWidth/1.8 - 20 - 60) style:UITableViewStyleGrouped];
     tableView.delegate = self;
     tableView.dataSource = self;
-//    [tableView registerClass:[ZCell1 class] forCellReuseIdentifier:@"cell"];
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         //        _page = 1;
         //        [self.bigDataArr removeAllObjects];
@@ -102,10 +102,53 @@
     self.tableView = tableView;
     [self.view addSubview:tableView];
     
-    
-    
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    if (!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    cell.textLabel.text = @"item";
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator; //显示最右边的箭头
+     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 60;
+}
+
+- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kWidth, 60)];
+    
+    myLabel * label = [[myLabel alloc]initWithFrame:CGRectMake(16, 0, 80, view.bounds.size.height) text:@"iphoneX" textColor:RGBCOLOR(14, 14, 14, 1) font:[UIFont systemFontOfSize:18] backgroundColor:[UIColor whiteColor]];
+    [view addSubview:label];
+    
+    UIButton *buttonMessage = [UIButton buttonWithType:UIButtonTypeCustom];
+    [buttonMessage setTitle:@"购买" forState:UIControlStateNormal];
+    [buttonMessage setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    buttonMessage.layer.cornerRadius = 10.0f;
+    buttonMessage.titleLabel.font = [UIFont systemFontOfSize:15];
+    buttonMessage.backgroundColor = RGBCOLOR(14,14,14, 1);
+    @weakify(self)
+    [buttonMessage addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
+//        [weak_self releaseMsg];
+    }];
+    buttonMessage.frame = CGRectMake(kWidth - 100, 10, 80, 40);
+    [view addSubview:buttonMessage];
+    
+    return view;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

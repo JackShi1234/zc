@@ -21,21 +21,51 @@
 //获取验证码方法
 - (IBAction)clickGetCode:(id)sender {
     
-//    NSDictionary * parame = @{
-//                              @"phonenumber":dictionary[@"userID"]
-//
-//                              };
+    NSDictionary * parame = @{
+                              @"phonenumber":_confirmTextField.text
+
+                              };
+    [LXNetworking postWithUrl:[NSString stringWithFormat:@"%@%@",SERVER_IP,SENDCODE] params:parame success:^(id response) {
+        
+        NSDictionary *dic = (NSDictionary *)response;
+        //        UserModel *model = [UserModel modelWithJSON:dic[@"data"]];
+        if ([dic[@"code"] intValue] == 1) {
+            
+            HUD(dic[@"msg"]);
+//            [self.navigationController popViewControllerAnimated:YES];
+            
+        }else{
+            HUD(dic[@"msg"]);
+        }
+    } fail:^(NSError *error) {
+        ShowError
+    }];
 }
 
 //注册方法
 - (IBAction)clickResign:(id)sender {
     
-//    NSDictionary * parame = @{
-//                              @"phonenumber":dictionary[@"userID"],
-//                              @"password":[USER_DEFAULTS objectForKey:@"ukey"],
-//                              @"code":dictionary[@"userID"],
-//                              @"tgname":[USER_DEFAULTS objectForKey:@"ukey"],
-//                              };
+    NSDictionary * parame = @{
+                              @"phonenumber":_passwordTextField.text,
+                              @"password":_passwordTextField.text,
+                              @"code":_codeTextField.text,
+                              @"tgname":_confirmTextField.text,
+                              };
+    [LXNetworking postWithUrl:[NSString stringWithFormat:@"%@%@",SERVER_IP,REGISTER] params:parame success:^(id response) {
+        
+        NSDictionary *dic = (NSDictionary *)response;
+        //        UserModel *model = [UserModel modelWithJSON:dic[@"data"]];
+        if ([dic[@"code"] intValue] == 1) {
+            
+            HUD(dic[@"msg"]);
+            [self.navigationController popViewControllerAnimated:YES];
+            
+        }else{
+            HUD(dic[@"msg"]);
+        }
+    } fail:^(NSError *error) {
+        ShowError
+    }];
 }
 
 /*

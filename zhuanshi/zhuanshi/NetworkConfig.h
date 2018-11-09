@@ -10,9 +10,9 @@
 #define NetworkConfig_h
 
 
-#define register @"/user/register"
-#define sendCode @"/user/sendRcode"
-#define loginIn @"/user/doLogin"
-#define findeUser @"/user/findUser"
+#define REGISTER @"/user/register"
+#define SENDCODE @"/user/sendRcode"
+#define LOGININ @"/user/doLogin"
+#define FINDUSER @"/user/findUser"
 
 #endif /* NetworkConfig_h */
